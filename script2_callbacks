@@ -39,13 +39,13 @@ def cook(scriptOP):
         x_offset, y_offset, z_offset = 0, 0, 0
 
         if nucleotide == 'A':
-            z_offset = 4 * math.sin(time-0/2)  # Move back and forth in Z
+            z_offset = 4 * math.sin((time-0)/2)  # Move back and forth in Z
         elif nucleotide == 'T':
-            z_offset = 4 * math.sin(time-3/2)
+            z_offset = 4 * math.sin((time-3)/2)
         elif nucleotide == 'C':
-            z_offset = 4 * math.sin(time-6/2)
+            z_offset = 4 * math.sin((time-6)/2)
         elif nucleotide == 'G':
-            z_offset = 4 * math.sin(time-9/2)
+            z_offset = 4 * math.sin((time-9)/2)
 
         # Apply
         point.x = x + x_offset
